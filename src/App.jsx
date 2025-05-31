@@ -49,7 +49,7 @@ function App() {
         await updateSearchCount(query, data.results[0]);
       }
     } catch (error) {
-      setErrorMessage("Error Fetching Movies, try again later");
+      setErrorMessage("Error Fetching Movies, try again later" + error);
     } finally {
       setIsLoading(false);
     }
